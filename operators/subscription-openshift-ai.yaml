@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: openshift-ai-operator-sub
+  namespace: openshift-operators
+spec:
+  channel: stable
+  name: red-hat-openshift-ai   # placeholder name — confirm exact package name in Red Hat OperatorHub
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  installPlanApproval: Manual

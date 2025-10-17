@@ -1,0 +1,7 @@
+apiVersion: nfd.openshift.io/v1
+kind: NodeFeatureDiscovery
+metadata:
+  name: nfd
+  namespace: openshift-nfd
+spec:
+  # leave default or add operand.image if required for your OCP version

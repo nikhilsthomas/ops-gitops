@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: nvidia-gpu-operator-sub
+  namespace: openshift-operators
+spec:
+  channel: stable
+  name: nvidia-gpu-operator
+  source: community-operators      # on some clusters the package is in operatorhubio-catalog or redhat-operators
+  sourceNamespace: openshift-marketplace
+  installPlanApproval: Manual

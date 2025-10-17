@@ -1,0 +1,12 @@
+apiVersion: minio.min.io/v2
+kind: Tenant
+metadata:
+  name: minio-tenant
+  namespace: minio-tenant
+spec:
+  # a tiny example; adapt pools/size to your environment
+  pools:
+    - servers: 4
+      volumesPerServer: 1
+      size: 10Gi
+  mountPath: /export

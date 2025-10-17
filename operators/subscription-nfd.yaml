@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: node-feature-discovery-operator-sub
+  namespace: openshift-operators
+spec:
+  channel: stable
+  name: node-feature-discovery-operator
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  installPlanApproval: Manual
